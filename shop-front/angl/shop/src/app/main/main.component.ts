@@ -19,7 +19,7 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    for(let i=0;i<16;i++){
+    for(let i=0;i<40;i++){
       this.cards[i]=new Card("Product",2000)
     }
     /*this.prodService.findAll().subscribe(
