@@ -1,4 +1,4 @@
-export class Card {
+export class Product {
 
   constructor(name: String,  price: number) {
     this.name = name;

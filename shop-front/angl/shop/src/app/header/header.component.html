@@ -6,13 +6,13 @@
         <div class="flex  contact">
           <div class="flex phone">
 							<span>
-							<i class="fas fa-phone-alt"></i>
+							<i class="fa fa-phone-alt"></i>
 							</span>
             <p>+7(700)70 70 770</p>
           </div>
           <div class="flex  mail">
 							<span>
-							<i class="fas fa-envelope"></i>
+							<i class="fa fa-envelope"></i>
 							</span>
             <p>weshop@mail.ru</p>
           </div>
@@ -31,15 +31,15 @@
 
         <div class="form">
           <form action="">
-            <input type="search" placeholder="Поиск...">
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <input type="search" placeholder="Поиск..."  [(ngModel)]="ask"  (ngModelChange)="onStringCange()">
+            <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
 
         <div class="flex balance ">
           <div class="circle">
 							<span>
-							<i class="fas fa-shopping-cart"></i>
+							<i class="fa fa-shopping-cart"></i>
 							</span>
           </div>
           <p id="price" class="text-right">100 рублей</p>

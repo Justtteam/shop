@@ -7,21 +7,25 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class ProductService {
-  private usersUrl: string;
+  private url: string;
   constructor(private http: HttpClient) {
-    this.usersUrl = 'http://localhost:8080';
+    this.url = 'http://localhost:8080';
   }
   getNew(): Observable<any> {
-    return this.http.get(`${this.usersUrl + '/getNew'}`);
+    return this.http.get(`${this.url + '/getNew'}`);
   }
   getRecomends(): Observable<any> {
-    return this.http.get(`${this.usersUrl + '/getRecomends'}`);
+    return this.http.get(`${this.url + '/getRecomends'}`);
   }
   getProdByCatId(id: number ): Observable<any> {
-    return this.http.get(`${this.usersUrl + '/getProdByType'}/${id}`);
+    return this.http.get(`${this.url + '/getProdByType'}/${id}`);
   }
   findAll():Observable<any>{
-    return this.http.get(`${this.usersUrl + '/getAll'}`)
+    return this.http.get(`${this.url + '/getAll'}`)
+  }
+  //not added at back
+  getProductsByName(name: string):Observable<any>{
+    return this.http.get(`${this.url + '/getProductByName'}/${name}`)
   }
 
 }

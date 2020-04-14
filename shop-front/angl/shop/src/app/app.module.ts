@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {HttpClientModule} from '@angular/common/http';
-import {MainComponent} from "./main/main.component";
+import {MainComponent} from './main/main.component';
 import { LoginComponent } from './login/login.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
 import { RegistrationComponent } from './registration/registration.component';
 import { ProductsByCategoriesComponent } from './products-by-categories/products-by-categories.component';
+import { SearchibleContainerComponent } from './searchible-container/searchible-container.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { ProductsByCategoriesComponent } from './products-by-categories/products
     MainComponent,
     LoginComponent,
     RegistrationComponent,
-    ProductsByCategoriesComponent
+    ProductsByCategoriesComponent,
+    SearchibleContainerComponent
   ],
   imports: [
     HttpClientModule,
