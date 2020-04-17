@@ -12,6 +12,7 @@ import {Topic} from '../classes/Topic';
 })
 export class MainComponent implements OnInit {
   cards: Observable<Product[]>;
+  imageSrc:string;
   topics: Observable<Topic[]>;
   /*cards: Product[] = [];*/
   /*topics: Topics[]=[];*/
@@ -20,14 +21,16 @@ export class MainComponent implements OnInit {
   }
 
   ngOnInit(): void {
-/* for (let i = 0; i < 40; i++) {
-   this.cards[i] = new Product('Product', 2000);
- }*/
+    /*for (let i = 0; i < 10; i++) {
+      this.cards[i] = new Product('Product', 2000);
+    }*/
+    /* this.imageSrc = 'data:image/jpeg;base64,' +  data['image'];*/
     this.prodService.findAll().subscribe(
       data => {
-        this.cards = data;
+        this.cards=data;
       }
     );
-  }
 
+
+  }
 }

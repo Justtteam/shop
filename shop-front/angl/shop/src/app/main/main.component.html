@@ -28,7 +28,7 @@
       <div class="box-card-obj info-horizontal-wrap">
         <tr *ngFor="let card of cards">
           <div class="card-obj">
-            <img src="img/card-obj.jpg" alt="img">
+            <img [src]=card.img />
             <h3>{{card.name}}</h3>
             <p>{{card.price}}</p>
           </div>

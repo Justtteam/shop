@@ -31,8 +31,11 @@
 
         <div class="form">
           <form action="">
-            <input type="search" placeholder="Поиск..."  [(ngModel)]="ask"  (ngModelChange)="onStringCange()">
+            <label>
+              <input type="search" placeholder="Поиск..."  [(ngModel)]="ask"  (ngModelChange)="onStringChange()" name="search">
+            </label>
             <button type="submit"><i class="fa fa-search"></i></button>
+
           </form>
         </div>
 
